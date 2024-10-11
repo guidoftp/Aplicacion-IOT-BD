@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "214741783680",
+    "project_id": "basedatosapp-20d85",
+    "storage_bucket": "basedatosapp-20d85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214741783680:android:55c64196f405a2366b8265",
+        "android_client_info": {
+          "package_name": "com.example.aplicaioniot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwgPZ6nFloGW5snel1ZCryVduUfNO7qcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

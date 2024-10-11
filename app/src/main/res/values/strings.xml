@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Mi Aplicación</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="register_title">Registrarse</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="repeat_password">Repetir Contraseña</string>
+    <string name="user">Usuario</string>
+    <string name="login_button">Iniciar Sesión</string>
+    <string name="register_button">Crear Cuenta</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="no_account">¿No tienes una cuenta?</string>
+    <string name="have_account">¿Ya tienes una cuenta?</string>
+    <string name="sign_up_here">Regístrate aquí</string>
+    <string name="login_error">Error al iniciar sesión. Por favor verifica tus credenciales.</string>
+    <string name="register_error">Error al registrarse. Verifica los campos.</string>
+    <string name="logout">Cerrar Sesión</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">Asignaturas</string>
+    <string name="view_subject">Ver Asignatura</string>
+    <string name="subject_name">Nombre de la Asignatura</string>
+    <string name="subject_description">Descripción</string>
+    <string name="no_subjects">No hay asignaturas registradas</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">Perfil</string>
+    <string name="profile_user">Usuario:</string>
+    <string name="profile_email">Correo Electrónico:</string>
+    <string name="profile_favorites">Asignaturas Favoritas</string>
+
+    <!-- CRUD Asignaturas -->
+    <string name="add_subject">Agregar Asignatura</string>
+    <string name="edit_subject">Editar Asignatura</string>
+    <string name="save">Guardar</string>
+    <string name="delete">Eliminar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="create_subject">Crear Nueva Asignatura</string>
+    <string name="subject_created">Asignatura creada correctamente</string>
+    <string name="subject_updated">Asignatura actualizada correctamente</string>
+    <string name="subject_deleted">Asignatura eliminada correctamente</string>
+    <string name="report_subject">Reportar Asignatura</string>
+    <string name="delete_subject_warning">La asignatura será eliminada después de 5 reportes</string>
+    <string name="confirm_delete">¿Estás seguro de que deseas eliminar esta asignatura?</string>
+
+    <!-- Subject Rating -->
+    <string name="rate_subject">Calificar Asignatura</string>
+    <string name="rate_deficient">Deficiente</string>
+    <string name="rate_bad">Mala</string>
+    <string name="rate_good">Buena</string>
+    <string name="rate_excellent">Excelente</string>
+    <string name="rating_saved">Calificación guardada</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="nav_logout">Cerrar Sesión</string>
+
+    <!-- General Messages -->
+    <string name="loading">Cargando...</string>
+    <string name="error">Ha ocurrido un error</string>
+    <string name="no_data">No hay datos disponibles</string>
+    <string name="action_successful">Acción realizada con éxito</string>
+    <string name="action_failed">Acción fallida</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

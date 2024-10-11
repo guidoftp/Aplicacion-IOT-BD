@@ -1,0 +1,13 @@
+<resources>
+    <!-- Otros estilos -->
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/colorPrimary</item> <!-- Color de fondo -->
+        <item name="android:textColor">@android:color/white</item> <!-- Color del texto -->
+        <item name="android:padding">8dp</item> <!-- Espaciado interno -->
+        <item name="android:textSize">16sp</item> <!-- Tamaño de texto -->
+        <item name="android:layout_marginEnd">8dp</item> <!-- Margen entre botones -->
+    </style>
+</resources>
