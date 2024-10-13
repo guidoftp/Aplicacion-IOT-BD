@@ -22,7 +22,9 @@
         android:visibility="gone"
         android:layout_gravity="center"
         android:textColor="@android:color/holo_red_dark"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -41,8 +43,9 @@
         android:layout_marginTop="16dp"
         android:text="Agregar Materia"
         android:backgroundTint="@color/colorPrimary"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
 </LinearLayout>
-
-
-

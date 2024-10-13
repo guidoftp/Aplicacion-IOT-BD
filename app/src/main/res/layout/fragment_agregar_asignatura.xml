@@ -3,59 +3,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/background_color"> <!-- Color de fondo general -->
 
     <EditText
         android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre de la Asignatura" />
+        android:hint="Nombre de la Asignatura"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="8dp" /> <!-- Fondo con esquinas redondeadas -->
 
     <EditText
         android:id="@+id/editTextDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Descripción" />
+        android:hint="Descripción"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="8dp" /> <!-- Fondo con esquinas redondeadas -->
 
     <EditText
         android:id="@+id/editTextRating"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Rating (0-3)" />
+        android:hint="Rating (0-3)"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="8dp" /> <!-- Fondo con esquinas redondeadas -->
 
     <EditText
         android:id="@+id/editTextNameToModify"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre de la Asignatura a Modificar" />
+        android:hint="Nombre de la Asignatura a Modificar"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="8dp" /> <!-- Fondo con esquinas redondeadas -->
 
     <EditText
         android:id="@+id/editTextNameToDelete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre de la Asignatura a Eliminar" />
+        android:hint="Nombre de la Asignatura a Eliminar"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp" /> <!-- Fondo con esquinas redondeadas -->
 
     <Button
         android:id="@+id/buttonSave"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar" />
+        android:text="Agregar"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:background="@drawable/button_background" /> <!-- Fondo con esquinas redondeadas -->
 
     <Button
         android:id="@+id/buttonModify"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Modificar" />
+        android:text="Modificar"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:background="@drawable/button_background" />
 
     <Button
         android:id="@+id/buttonDelete"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Eliminar" />
+        android:text="Eliminar"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        android:background="@drawable/button_background" />
 
 </LinearLayout>
-
-
-
-
-

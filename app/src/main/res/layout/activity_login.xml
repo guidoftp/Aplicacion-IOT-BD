@@ -14,7 +14,8 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp"/> <!-- Fondo con esquinas redondeadas -->
 
     <EditText
         android:id="@+id/etPassword"
@@ -23,7 +24,8 @@
         android:hint="Contraseña"
         android:inputType="textPassword"
         android:padding="12dp"
-        android:layout_marginBottom="16dp"/>
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp"/> <!-- Fondo con esquinas redondeadas -->
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -39,16 +41,9 @@
         android:text="Iniciar sesión"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/colorPrimary"
-        android:textColor="@android:color/white"/>
-
-<!--    <Button-->
-<!--        android:id="@+id/btnRegister"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Registrar"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:backgroundTint="@color/colorAccent"-->
-<!--        android:textColor="@android:color/white"/>-->
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:elevation="4dp"/> <!-- Fondo con esquinas redondeadas y sombra -->
 
     <Button
         android:id="@+id/btnGuest"
@@ -57,8 +52,8 @@
         android:text="Entrar como Invitado"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/colorAccent"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:elevation="4dp"/> <!-- Fondo con esquinas redondeadas y sombra -->
+
 </LinearLayout>
-
-
-

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/background_color">
 
     <TextView
         android:id="@+id/textViewStatus"
@@ -18,20 +21,26 @@
         android:id="@+id/editTextMateriaName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre de la materia" />
+        android:hint="Nombre de la materia"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background" />
 
     <EditText
         android:id="@+id/editTextMateriaDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Descripción de la materia" />
+        android:hint="Descripción de la materia"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background" />
 
     <EditText
         android:id="@+id/editTextMateriaRating"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Calificación de la materia"
-        android:inputType="number" />
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -42,23 +51,28 @@
 
     <Button
         android:id="@+id/buttonAddMateria"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Agregar Materia"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewMaterias"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_marginTop="16dp"
-        android:clipToPadding="false"
-        android:paddingBottom="16dp" />
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMaterias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp" />
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>
-
-
-
-
-
-

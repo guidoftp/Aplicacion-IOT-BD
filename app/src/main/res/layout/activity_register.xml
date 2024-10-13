@@ -15,6 +15,7 @@
         android:inputType="textEmailAddress"
         android:padding="12dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_background"
         tools:ignore="HardcodedText" />
 
     <EditText
@@ -25,6 +26,7 @@
         android:inputType="textPassword"
         android:padding="12dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -32,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Registrarse"
-        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/button_background"
         android:textColor="@android:color/white"
         android:layout_marginBottom="8dp"
         tools:ignore="HardcodedText" />
@@ -43,7 +45,7 @@
         android:layout_height="wrap_content"
         android:text="Volver a Iniciar Sesión"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/button_background"
         android:textColor="@android:color/white"
         tools:ignore="HardcodedText" />
 
@@ -53,5 +55,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="gone" />
-</LinearLayout>
 
+</LinearLayout>

@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/background_color">
 
     <TextView
         android:id="@+id/textViewTitle"
@@ -12,7 +13,8 @@
         android:text="Modificar Materia"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:textColor="@android:color/black" />
 
     <EditText
         android:id="@+id/editTextName"
@@ -20,7 +22,9 @@
         android:layout_height="wrap_content"
         android:hint="Nombre de la Materia"
         android:layout_marginTop="16dp"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background" />
 
     <EditText
         android:id="@+id/editTextDescription"
@@ -28,16 +32,19 @@
         android:layout_height="wrap_content"
         android:hint="Descripción de la Materia"
         android:layout_marginTop="8dp"
-        android:inputType="textMultiLine"/>
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background" />
 
-    <!-- EditText agregado para la calificación -->
     <EditText
         android:id="@+id/editTextRating"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Calificación"
         android:layout_marginTop="8dp"
-        android:inputType="number"/>
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background" />
 
     <Button
         android:id="@+id/buttonSave"
@@ -45,16 +52,19 @@
         android:layout_height="wrap_content"
         android:text="Guardar"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/colorPrimary"/>
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:padding="12dp" />
 
-    <!-- Botón de eliminar agregado -->
     <Button
         android:id="@+id/buttonDelete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Eliminar"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@android:color/holo_red_dark"/>
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:padding="12dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -64,5 +74,3 @@
         android:visibility="gone"/>
 
 </LinearLayout>
-
-
