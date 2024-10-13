@@ -1,59 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
     android:background="@color/background_color">
 
+    <!-- Título de bienvenida -->
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a ¡AprendeYA!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Imagen debajo del título -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="345dp"
+        android:layout_height="430dp"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewWelcome"
+        app:srcCompat="@drawable/loog" />
+
+    <!-- Campos de texto y botones en la parte inferior -->
     <EditText
         android:id="@+id/etEmail"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="12dp"
-        android:background="@drawable/edit_text_background"
-        android:layout_marginBottom="16dp"/> <!-- Fondo con esquinas redondeadas -->
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Contraseña"
         android:inputType="textPassword"
         android:padding="12dp"
-        android:background="@drawable/edit_text_background"
-        android:layout_marginBottom="16dp"/> <!-- Fondo con esquinas redondeadas -->
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Iniciar sesión"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="@android:color/white"
-        android:background="@drawable/button_background"
-        android:elevation="4dp"/> <!-- Fondo con esquinas redondeadas y sombra -->
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnGuest"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Entrar como Invitado"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/colorAccent"
         android:textColor="@android:color/white"
-        android:background="@drawable/button_background"
-        android:elevation="4dp"/> <!-- Fondo con esquinas redondeadas y sombra -->
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
